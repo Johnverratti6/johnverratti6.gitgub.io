@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Personal Brand</title>
+    <!-- Importing a clean, modern font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Styling - Controls the look and feel */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+            background: rgba(13, 13, 13, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            color: #a0a0a0;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #0d0d0d 100%);
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+            background: linear-gradient(45deg, #fff, #a0a0a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #a0a0a0;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: #fff;
+            color: #0d0d0d;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            background-color: #e6e6e6;
+        }
+
+        /* Features/About Section */
+        .services {
+            padding: 100px 10%;
+            background-color: #121212;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 60px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            padding: 40px 30px;
+            border-radius: 12px;
+            border: 1px solid #262626;
+            transition: border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: #fff;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .card p {
+            color: #a0a0a0;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 10%;
+            background-color: #0d0d0d;
+            text-align: center;
+            color: #404040;
+            font-size: 12px;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        /* Responsive design for mobile screens */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">BRAND.</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <h1>Built For High Performance</h1>
+        <p>This is a premium, minimalist space designed to introduce your vision, showcase your authority, and connect directly with your audience.</p>
+        <a href="mailto:your-email@example.com" class="cta-btn">Get In Touch</a>
+    </section>
+
+    <section class="services">
+        <h2>Core Pillars</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>01. Strategy</h3>
+                <p>Tailored blueprints built specifically around your individual targets and high-level execution models.</p>
+            </div>
+            <div class="card">
+                <h3>02. Aesthetic</h3>
+                <p>Clean, high-impact presentation that commands attention and leaves an unmistakable impression.</p>
+            </div>
+            <div class="card">
+                <h3>03. Results</h3>
+                <p>Eliminating guesswork and junk volume to focus purely on high-leverage outcomes and precision output.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Brand Name. All rights reserved. Hosted entirely on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
+
